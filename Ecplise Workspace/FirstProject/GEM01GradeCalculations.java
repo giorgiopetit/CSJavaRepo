@@ -11,6 +11,16 @@ public class GEM01GradeCalculations {
 	 * @param args
 	 */
 	public static void main(String[] args) {
+		/*Name: Giorgio Petit 
+  		Class: CS1050 T/TH 
+  		Description: Guided Exploration 01       
+ 		The program will calculate a final grade for this class based on the category weights  
+ */ 
+		
+		
+		
+		
+		
 		
 		//Variables for grades 
 		 
