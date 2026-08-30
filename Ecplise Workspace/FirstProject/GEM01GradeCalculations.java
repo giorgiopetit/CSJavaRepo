@@ -17,18 +17,13 @@ public class GEM01GradeCalculations {
  		The program will calculate a final grade for this class based on the category weights  
  */ 
 		
-		
-		
-		
-		
-		
 		//Variables for grades 
 		 
-		double CPG = 67.4;
-		double GEG = 60.9;
-		double QG = 100.0;
-		double PG = 72.4;
-		double FDG = 87.3;
+		double CPG = 89.5;
+		double GEG = 90.1;
+		double QG = 55.9;
+		double PG = 89.34;
+		double FDG = 40.1;
 		
 		//Grade Weights (Constants)
 		
