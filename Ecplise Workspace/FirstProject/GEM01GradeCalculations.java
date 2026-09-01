@@ -11,6 +11,7 @@ public class GEM01GradeCalculations {
 	 * @param args
 	 */
 	public static void main(String[] args) {
+		
 		/*Name: Giorgio Petit 
   		Class: CS1050 T/TH 
   		Description: Guided Exploration 01       
@@ -41,8 +42,12 @@ public class GEM01GradeCalculations {
 		double result4 = PG * GradeWeightP;
 		double result5 = FDG * GradeWeightFD;
 		
+		//Final Grade
+		
+		double finalGrade = result+result2+result3+result4+result5;
+		
 		System.out.print("Final Grade = ");
-		System.out.print(result+result2+result3+result4+result5);
+		System.out.print(finalGrade);
 		
 		// TODO Auto-generated method stub
 
