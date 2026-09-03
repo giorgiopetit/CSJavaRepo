@@ -41,8 +41,10 @@ public class GEM01GradeCalculations {
 		double result4 = PG * GradeWeightP;
 		double result5 = FDG * GradeWeightFD;
 		
+		double finalGrade = result+result2+result3+result4+result5;
+		
 		System.out.print("Final Grade = ");
-		System.out.print(result+result2+result3+result4+result5);
+		System.out.print(finalGrade); 
 		
 		// TODO Auto-generated method stub
 
