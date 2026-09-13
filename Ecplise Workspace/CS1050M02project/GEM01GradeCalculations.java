@@ -19,11 +19,11 @@ public class GEM01GradeCalculations {
 		
 		//Variables for grades 
 		 
-			double CPG = 89.5;
-			double GEG = 90.1;
-			double QG = 55.9;
-			double PG = 89.34;
-			double FDG = 40.1;
+			double CPG = 70.1;
+			double GEG = 70.1;
+			double QG = 70.2;
+			double PG = 70.1;
+			double FDG = 70.2;
 		
 		//Grade Weights (Constants)
 		
@@ -51,7 +51,7 @@ public class GEM01GradeCalculations {
 			
 			//showing letter grade based on final grade
 			
-			if (finalGrade >= 90 );
+			if (finalGrade >= 90 )
 			{
 				
 				
@@ -59,17 +59,23 @@ public class GEM01GradeCalculations {
 				System.out.print("Final Grade = ");
 				System.out.print(letterGrade);
 			}
-		
-			if (finalGrade <= 89 );
+			
+			else if(finalGrade <= 89 )
 			{
+			
+			
 				String letterGrade = "B";
 				System.out.print("Final Grade = ");
 				System.out.print(letterGrade);
 			
 			}
 			
-			
-			
+			else if(finalGrade <= 79 )
+			{
+				String letterGrade = "C";
+				System.out.print("Final Grade = ");
+				System.out.print(letterGrade);
+			}
 
 	}
 
