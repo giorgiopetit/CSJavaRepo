@@ -5,6 +5,7 @@
 /**
  * 
  */
+import java.util.Scanner;
 public class GEM01GradeCalculations {
 
 	/**
@@ -17,13 +18,30 @@ public class GEM01GradeCalculations {
  		The program will calculate a final grade for this class based on the category weights  
  */ 
 		
-		//Variables for grades 
-		 
-			double CPG = 70.1;
-			double GEG = 70.1;
-			double QG = 70.2;
-			double PG = 70.1;
-			double FDG = 70.2;
+		//Making someone Input their name
+		Scanner input = new Scanner (System.in);
+		System.out.print("Enter your name:");
+		String name = input.nextLine();
+		
+		//Inputing Grade and asking what the grade is 
+		System.out.print("Enter your Class Participation Grade :");
+		double CPG = input.nextDouble();
+	
+		
+		System.out.print("Enter your Guided Exploration Grade: ");
+		double GEG = input.nextDouble();
+		
+		
+		System.out.print("Enter your Quiz Grade: ");
+		double QG = input.nextDouble();
+		
+		System.out.print("Enter your Project Grade: ");
+		double PG = input.nextDouble();
+		
+		
+		System.out.print("Enter your Final Demenstration Grade: ");
+		double FDG = input.nextDouble();
+		
 		
 		//Grade Weights (Constants)
 		
@@ -50,8 +68,8 @@ public class GEM01GradeCalculations {
 		
 			
 			//showing letter grade based on final grade
-			
 			if (finalGrade >= 90 )
+			
 			{
 				
 				
@@ -60,23 +78,39 @@ public class GEM01GradeCalculations {
 				System.out.print(letterGrade);
 			}
 			
-			else if(finalGrade <= 89 )
+			else if(finalGrade >= 80 )
 			{
 			
 			
 				String letterGrade = "B";
 				System.out.print("Final Grade = ");
 				System.out.print(letterGrade);
-			
 			}
 			
-			else if(finalGrade <= 79 )
+			
+			else if(finalGrade >= 70 )
 			{
+				
 				String letterGrade = "C";
 				System.out.print("Final Grade = ");
 				System.out.print(letterGrade);
 			}
-
+			
+			else if (finalGrade >= 60)
+			{
+				String letterGrade = "D";
+				System.out.print("Final Grade = ");
+				System.out.print(letterGrade);
+			}
+			
+			else if (finalGrade < 59)
+			{
+				String letterGrade = "F";
+				System.out.print("Final Grade = ");
+				System.out.print(letterGrade);
+			}
+		input.close();	
+		
 	}
 
 }
