@@ -14,7 +14,7 @@ public class GEM01GradeCalculations {
 	public static void main(String[] args) {
 		/*Name: Giorgio Petit 
   		Class: CS1050 T/TH 
-  		Description: Guided Exploration 01       
+  		Description: Guided Exploration 02   
  		The program will calculate a final grade for this class based on the category weights  
  */ 
 		
