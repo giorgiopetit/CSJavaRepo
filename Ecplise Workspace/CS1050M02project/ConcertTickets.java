@@ -63,12 +63,15 @@ public class ConcertTickets {
             input.close();
             return; // end the program, no valid row entered
         } 
+        
         else if (row <= 15) {
             price = 450;
         } 
+        
         else if (row <= 30) {
             price = 300;
         } 
+        
         else { // row is between 31 and 60
             price = 200;
         }
