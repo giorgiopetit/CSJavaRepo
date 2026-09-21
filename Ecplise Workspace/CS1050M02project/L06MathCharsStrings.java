@@ -18,21 +18,6 @@ public class L06MathCharsStrings {
 		randomInt = (int) (Math.random() * 10);
 		randomInt = (int) (Math.random() * 10 + 1);
 
-		
-		
-		char middleInitial = 'M';
-		int charAsciiValue = (int)middleInitial; 
-		String firstName = "Elaine";
-		
-		
-		char charTest= 'a';
-		int charAsciiValue= (int)charTest;
-		String firstName = "Heriberto";
-		System.out.printf("char: %c ascii value: %d \n", charTest, charAsciiValue);
-		System.out.println("Hello " + name);	
-		int stringLength = firstName.length();
-		char firstInitial = firstName.charAt(0);
-
 	}
 }
 

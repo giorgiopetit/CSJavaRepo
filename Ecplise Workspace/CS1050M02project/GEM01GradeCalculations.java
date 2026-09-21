@@ -36,7 +36,7 @@ public class GEM01GradeCalculations {
 		double QG = input.nextDouble();
 		
 		System.out.print("Enter your Project Grade: ");
-		double PG = input.nextDouble();
+			double PG = input.nextDouble();
 		
 		
 		System.out.print("Enter your Final Demenstration Grade: ");
@@ -108,6 +108,7 @@ public class GEM01GradeCalculations {
 				String letterGrade = "F";
 				System.out.print("Final Grade = ");
 				System.out.print(letterGrade);
+				
 			}
 		input.close();	
 		
