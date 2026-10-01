@@ -36,16 +36,15 @@ public class userlogin {
 	}
 
 	System.out.println("Enter Password: " ) ;		
-	
-		if( correctPassword != "p@$$")	
+	String password = input.next();
+		if( password == "p@$$")	
 			{	
-			System.out.print("Correct");
+			System.out.print("Incorrect");
 			}
-	
-	
-
-	
-	
+		else if (password == "p@$$");
+		{
+			System.out.print("Correct");
+		}
 	
 	
 	
