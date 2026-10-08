@@ -14,10 +14,10 @@ public class Lab15 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		Scanner input = new Scanner (System.in);
+		
 		System.out.println("Number of Students:");
-
-		String[] firstName = new String[10];
+		Scanner input = new Scanner (System.in);
+		//String[] firstName = new String[10];
 		
 	}
 
