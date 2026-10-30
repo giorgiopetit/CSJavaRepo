@@ -1,9 +1,6 @@
-/**
- * 
- */
+//Add Comments to explain concepts from M05 on classes and objects
 
-
- public class TestCircleObjectClassIntro
+public class TestCircleObjectClassIntro
 {
 
 	/** Main method */
