@@ -35,17 +35,17 @@ public class TestSimpleCircle {
 	}
 
 	// Define the circle class with two constructors
-	class SimpleCircle  {
+	 class SimpleCircle  {
 	  private double radius;
-
+	
 	  public double getRadius() {
 		  return radius;
 	  }
 	  
 	  /** Construct a circle with radius 1 */
-	  public public SimpleCircle()  {
+	  public  SimpleCircle()  {
 	    radius = 1;
-	
+	   
 	  }
 
 	  /** Construct a circle with a specified radius */
@@ -70,4 +70,5 @@ public class TestSimpleCircle {
 	
 	}
 
+	
 
