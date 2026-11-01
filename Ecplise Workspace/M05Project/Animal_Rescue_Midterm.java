@@ -23,7 +23,7 @@ public class Animal_Rescue_Midterm {
  
         Scanner input = new Scanner(System.in);
  
-        // ----- User Story 1: Program Overview -----
+        //  User Story 1: Program Overview 
         displayOverview();
  
         // Ask how many animals will be entered (must be a whole number > 0)
@@ -35,24 +35,37 @@ public class Animal_Rescue_Midterm {
             System.out.println();
             System.out.println("Enter data for animal " + i);
  
-            // ----- User Story 3: Enter and Validate Animal Data -----
+            //  User Story 3: Enter and Validate Animal Data 
             String name = getAnimalName(input, "Enter animal name: ");
             double weight = getValidPositiveDouble(input, "Enter weight in pounds: ");
             double dailyFood = getValidPositiveDouble(input, "Enter daily food amount: ");
  
-            // ----- User Story 4: Calculate Weekly Food Amount -----
+            // User Story 4: Calculate Weekly Food Amount 
             double weeklyFood = calculateWeeklyFood(dailyFood);
  
-            // ----- User Story 5: Determine Animal Weight Category -----
+            //User Story 5: Determine Animal Weight Category 
             String category = determineWeightCategory(weight);
  
-            // ----- User Story 6: Display Individual Animal Summary -----
+            //  Display Individual Animal Summary 
             displayAnimalSummary(name, weight, category, dailyFood, weeklyFood);
             
             // Save this animal's data in the arrays (index starts at 0)
-            
+            names[animalNumber - 1] = name;
+            dailyFoods[animalNumber - 1] = dailyFood;
+            weeklyFoods[animalNumber - 1] = weeklyFood;
         }
- 
+        //Total WeeklyFood Required
+        	double totalWeeklyFood = calculateTotal(weeklyFoods);
+        	
+        // User Story 8: Average Daily Food Amount -----
+            double averageDailyFood = calculateAverage(calculateTotal(dailyFoods), numAnimals);
+     
+        // Display the rescue summary, then the animals at or above average
+            displayRescueSummary(numAnimals, totalWeeklyFood, averageDailyFood);
+     
+        //  User Story 9: Animals At or Above Average Daily Food 
+            displayAboveAverage(names, dailyFoods, averageDailyFood);
+        
         input.close();
     }
  
@@ -162,5 +175,7 @@ public class Animal_Rescue_Midterm {
         System.out.println("Weight Category: " + category);
         System.out.printf("Daily food amount: %.2f cups%n", dailyFood);
         System.out.printf("Weekly food amount: %.2f cups%n", weeklyFood);
-    }
-}
+    }}
+    
+
+
