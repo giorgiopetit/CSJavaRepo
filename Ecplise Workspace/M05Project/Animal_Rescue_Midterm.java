@@ -175,7 +175,19 @@ public class Animal_Rescue_Midterm {
         System.out.println("Weight Category: " + category);
         System.out.printf("Daily food amount: %.2f cups%n", dailyFood);
         System.out.printf("Weekly food amount: %.2f cups%n", weeklyFood);
-    }}
-    
+    }
+  
 
+ 		
 
+public static double calculateTotal(double[] amounts) {
+	double total = 0
+			
+	for (int animalNumber = 0; animalNumber < amounts.length; animalNumber++)
+	{
+		total += amounts[animalNumber];
+	}
+		return total;
+	}
+
+}
