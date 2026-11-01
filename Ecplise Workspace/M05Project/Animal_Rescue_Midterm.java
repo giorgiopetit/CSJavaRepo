@@ -48,6 +48,9 @@ public class Animal_Rescue_Midterm {
  
             // ----- User Story 6: Display Individual Animal Summary -----
             displayAnimalSummary(name, weight, category, dailyFood, weeklyFood);
+            
+            // Save this animal's data in the arrays (index starts at 0)
+            
         }
  
         input.close();
@@ -57,7 +60,7 @@ public class Animal_Rescue_Midterm {
      * Displays the program overview/banner described in User Story 1.
      */
     public static void displayOverview() {
-      
+        
         System.out.println("Animal Rescue Center Analysis");
        System.out.println();
         System.out.println("The rescue employee enters the number of animals currently in the rescue.");
@@ -69,6 +72,15 @@ public class Animal_Rescue_Midterm {
         System.out.println("The program analyzes the animal information to:");
         System.out.println("  calculate each animal's weekly food amount");
         System.out.println("  categorize each animal by weight");
+        System.out.println("      Small: less than 20 lbs");
+        System.out.println("      Medium: 20 to less than 50 lbs");
+        System.out.println("      Large: 50 to less than 100 lbs");
+        System.out.println("      Extra Large: 100 lbs or greater");
+        System.out.println("  calculate the average daily food amount for all animals");
+        System.out.println("  identify animals that eat at or above the average daily food amount");
+        System.out.println("  calculate the total amount of food needed for all animals for one week");
+        System.out.println();
+        System.out.println("The program displays each animal's information and a summary of the rescue's food needs.");
     }
  
     
