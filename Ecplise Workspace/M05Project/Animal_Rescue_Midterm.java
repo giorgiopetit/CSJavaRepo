@@ -29,6 +29,15 @@ public class Animal_Rescue_Midterm {
         // Ask how many animals will be entered (must be a whole number > 0)
         int numAnimals = getValidPositiveInt(input, "Enter number of animals: ");
  
+        
+        //arrays store animal data
+        String[] names = new String[numAnimals];
+        double[] dailyFoods = new double [numAnimals];
+        double[] weeklyFoods = new double [numAnimals];
+        
+        
+        
+        
         // Process each animal one at a time: enter, calculate, categorize, display
         for (int i = 1; i <= numAnimals; i++) {
  
@@ -180,8 +189,8 @@ public class Animal_Rescue_Midterm {
 
  		
 
-public static double calculateTotal(double[] amounts) {
-	double total = 0
+    public static double calculateTotal(double[] amounts) {
+    	double total = 0;
 			
 	for (int animalNumber = 0; animalNumber < amounts.length; animalNumber++)
 	{
@@ -189,5 +198,34 @@ public static double calculateTotal(double[] amounts) {
 	}
 		return total;
 	}
+    public static double calculateAverage(double total, int numAnimals) {
+    	return total / numAnimals;
+}
 
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+ // Lists each animal that eats at or above the average 3
+    public static void displayAboveAverage(String[] names, double[] dailyFoods,
+                                            double averageDailyFood) {
+        System.out.println();
+        System.out.println("Animals At or Above Average Daily Food Amount:");
+ 
+        for (int animalNumber = 0; animalNumber < names.length; animalNumber++) {
+            if (dailyFoods[animalNumber] >= averageDailyFood) {
+                System.out.printf("%s: %.2f cups%n", names[animalNumber], dailyFoods[animalNumber]);
+            }
+        }
+    }
 }
