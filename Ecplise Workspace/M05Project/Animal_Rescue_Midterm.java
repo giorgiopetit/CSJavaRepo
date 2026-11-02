@@ -55,6 +55,7 @@ public class Animal_Rescue_Midterm {
             //User Story 5: Determine Animal Weight Category 
             String category = determineWeightCategory(weight);
  
+          
             //  Display Individual Animal Summary 
             displayAnimalSummary(name, weight, category, dailyFood, weeklyFood);
             
@@ -198,12 +199,21 @@ public class Animal_Rescue_Midterm {
 	}
 		return total;
 	}
+    
     public static double calculateAverage(double total, int numAnimals) {
     	return total / numAnimals;
 }
 
-
-
+    public static void displayRescueSummary(int numAnimals, double totalWeeklyFood,
+            double averageDailyFood) {
+System.out.println();
+System.out.println("========== Rescue Analysis Summary ==========");
+System.out.println();
+System.out.println("Number of Animals: " + numAnimals);
+System.out.printf("Total Weekly Food Required: %.2f cups%n", totalWeeklyFood);
+System.out.printf("Average Daily Food Amount: %.2f cups%n", averageDailyFood);
+}
+   
 
 
 
