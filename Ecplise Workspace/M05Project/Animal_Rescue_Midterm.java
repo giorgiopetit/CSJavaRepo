@@ -34,15 +34,15 @@ public class Animal_Rescue_Midterm {
         String[] names = new String[numAnimals];
         double[] dailyFoods = new double [numAnimals];
         double[] weeklyFoods = new double [numAnimals];
-        
+        double[] weights = new double[numAnimals];
         
         
         
         // Process each animal one at a time: enter, calculate, categorize, display
-        for (int i = 1; i <= numAnimals; i++) {
+        for (int animalNumber = 1; animalNumber <= numAnimals; animalNumber++) {
  
             System.out.println();
-            System.out.println("Enter data for animal " + i);
+            System.out.println("Enter data for animal " + animalNumber);
  
             //  User Story 3: Enter and Validate Animal Data 
             String name = getAnimalName(input, "Enter animal name: ");
@@ -178,7 +178,7 @@ public class Animal_Rescue_Midterm {
     public static void displayAnimalSummary(String name, double weight, String category,
                                              double dailyFood, double weeklyFood) {
         System.out.println();
-        System.out.println("========== Animal Summary ==========");
+        System.out.println(" Animal Summary ");
         System.out.println();
         System.out.println("Animal Name: " + name);
         System.out.printf("Weight: %.2f lbs%n", weight);
@@ -207,7 +207,7 @@ public class Animal_Rescue_Midterm {
     public static void displayRescueSummary(int numAnimals, double totalWeeklyFood,
             double averageDailyFood) {
 System.out.println();
-System.out.println("========== Rescue Analysis Summary ==========");
+System.out.println("Rescue Analysis Summary ");
 System.out.println();
 System.out.println("Number of Animals: " + numAnimals);
 System.out.printf("Total Weekly Food Required: %.2f cups%n", totalWeeklyFood);

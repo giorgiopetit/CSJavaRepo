@@ -36,7 +36,7 @@ public class TestSimpleCircle {
 
 	// Define the circle class with two constructors
 	 class SimpleCircle  {
-	  private double radius;
+	   double radius;
 	
 	  public double getRadius() {
 		  return radius;
