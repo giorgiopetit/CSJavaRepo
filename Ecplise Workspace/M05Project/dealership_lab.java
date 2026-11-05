@@ -5,6 +5,7 @@
 /**
  * 
  */
+import java.io.PrintWriter;
 import java.util.Scanner;
 public class dealership_lab {
 
@@ -16,9 +17,9 @@ public class dealership_lab {
 
 	Car car1 = new Car("Ford",32800,"Mustang");
 	
-		
-		
-		
+		System.out.println(car1.getMake());
+		System.out.println(car1.getModel());
+		System.out.println(car1.getPrice());
 	}
 
 }
@@ -54,9 +55,9 @@ public double getPrice()
 	return price;
 }
 
-public void displayCarDetails() 
+public static void displayCarDetails() 
 	{
-System.out.print(car1);
+
 
 	}
 }//end of Car
