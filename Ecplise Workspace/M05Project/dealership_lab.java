@@ -5,7 +5,7 @@
 /**
  * 
  */
-import java.io.PrintWriter;
+
 import java.util.Scanner;
 public class dealership_lab {
 
@@ -15,11 +15,16 @@ public class dealership_lab {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-	Car car1 = new Car("Ford",32800,"Mustang");
+		Car car1 = new Car("Ford",32800,"Mustang");
 	
 		System.out.println(car1.getMake());
 		System.out.println(car1.getModel());
 		System.out.println(car1.getPrice());
+		
+		
+		
+		
+		
 	}
 
 }
