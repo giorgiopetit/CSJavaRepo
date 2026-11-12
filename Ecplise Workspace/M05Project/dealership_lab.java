@@ -87,48 +87,57 @@ class Dealership
  private Car[] cars;
  private int currentNumberCars;
 	
-	public Dealership(String name, Car[]cars, int currentNumbercars) {
-		
-		this.name = name;
-		this.cars = cars;
-		this.currentNumberCars = currentNumberCars;
-	}
-	public Dealership() {
-		// TODO Auto-generated constructor stub
-	}
-	public void addCar() {
-		// TODO Auto-generated method stub
-		
-	}
-	public String getDealershipName()
+	public Dealership(String name, Car[]cars, int currentNumbercars) 
 	{
+		
+	this.name = name;
+	this.cars = cars;
+	this.currentNumberCars = currentNumberCars;
+	}
+	
+		public Dealership() 
+		{
+		
+		}
+		public void addCar() 
+		{
+		
+		
+		}
+		
+		public String getDealershipName()
+		{
 		System.out.print("Enter Dealership Name:");
 		Scanner input = new Scanner (System.in);
 		String name = input.nextLine();
 		input.close();
 		return name;
 		
-	}
-	public String addCar(Car newCar) 
-	{
+		}
+		
+		public String addCar(Car newCar) 
+		{
 		System.out.print("Enter Car Make, Cost and Model");
 		Scanner input = new Scanner (System.in);
 		String car = input.nextLine();
 		input.close();
 		return car;
-	}
-	public void displayMostExpensiveCar()
-	{
-	
-	}
-	public void displayCars() 
-	{
+		}
 		
-	}
-	public void writeCarsToFile(String filename)
-	{
+		public void displayMostExpensiveCar()
+		{
 	
-	}
+		}
+		
+		public void displayCars() 
+		{
+		
+		}
+		
+		public void writeCarsToFile(String filename)
+		{
+	
+		}
 	
 }//end of Dealership
 
