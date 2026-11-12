@@ -87,11 +87,14 @@ class Dealership
  private Car[] cars;
  private int currentNumberCars;
 	
-	public Dealership() {
+	public Dealership(String name, Car[]cars, int currentNumbercars) {
 		
 		this.name = name;
 		this.cars = cars;
 		this.currentNumberCars = currentNumberCars;
+	}
+	public Dealership() {
+		// TODO Auto-generated constructor stub
 	}
 	public void addCar() {
 		// TODO Auto-generated method stub
